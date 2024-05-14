@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {addCart, delCart} from "../redux/actions/Action";
+import {addCart, delCart} from "../redux/actions/cartAction";
 import {Link} from "react-router-dom";
 
 export default function ProductList() {
@@ -27,8 +27,8 @@ export default function ProductList() {
     );
 }
 
-function Product(data) {
-    const [product, setProduct] = useState(data);
+function Product(product) {
+    const [product, setProduct] = useState(product);
 
     const dispatch = useDispatch();
 

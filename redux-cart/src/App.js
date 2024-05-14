@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux";
 import {useEffect} from "react";
 import ProductList from "./component/ProductList";
 import {products} from "./data/ProductData";
-import {loadProduct} from "./redux/actions/Action";
+import {loadProduct} from "./redux/actions/cartAction";
 
 function App() {
     const dispatch = useDispatch();
